@@ -1,8 +1,7 @@
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Würfelspiel {
+public class wuerfelspiel {
     public static void main(String[] args) {
         boolean isFinished = false;
         System.out.println("Drücken Sie 1 zum Starten und 2 zum beenden.");
@@ -12,28 +11,28 @@ public class Würfelspiel {
 
 
         while (!isFinished) {
-            int Wert = 0;
+            int value = 0;
             int selection = scanner.nextInt();
-            int randomnumber = 0;
+            int randomNumber = 0;
             if (selection == 1) {
                 for (int i = 1; i <= 6; i++) {
-                    randomnumber = random.nextInt(6) + 1;
-                    Wert += randomnumber;
-                    System.out.println("Sie haben eine " + randomnumber + " gewürfelt");
+                    randomNumber = random.nextInt(6) + 1;
+                    value += randomNumber;
+                    System.out.println("Sie haben eine " + randomNumber + " gewürfelt");
                 }
-                System.out.println("Ihr Wurf beträgt: " + Wert);
+                System.out.println("Ihr Wurf beträgt: " + value);
 
                 int bot = 0;
                 Random random1 = new Random();
                 bot = random.nextInt(31) + 6;
                 System.out.println("Der Botwurf beträgt " + bot);
 
-                if (bot < Wert) {
+                if (bot < value) {
                     System.out.println("Sie haben gewonnen!");
 
-                } else if (bot > Wert) {
+                } else if (bot > value) {
                     System.out.println("Sie haben verloren!");
-                } else if (bot == Wert) {
+                } else if (bot == value) {
                     System.out.println("Es ist ein Unentschieden!");
                 }
             }
