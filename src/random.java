@@ -7,12 +7,12 @@ public class random {
         int randomNumber = random.nextInt(100);
 
 
-        if (randomNumber<20){
+        if (randomNumber < 20) {
             System.out.println("Mini");
 
-        } else if ((randomNumber>=20) && (randomNumber<=50)){
+        } else if ((randomNumber >= 20) && (randomNumber <= 50)) {
             System.out.println("Medium");
-        } else{
+        } else {
             System.out.println("Large");
         }
 
