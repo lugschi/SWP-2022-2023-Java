@@ -8,7 +8,7 @@ public class random2 {
         int randomNumber = random.nextInt(100);
         int Number = random.nextInt(100);
 
-        if ((randomNumber<Number) && (randomNumber<50)){
+        if ((randomNumber < Number) && (randomNumber < 50)) {
 
         }
     }
