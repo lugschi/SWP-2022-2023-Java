@@ -8,7 +8,7 @@ public class Caesar {
 
         System.out.println("Zu verschlüsselnden Text eingeben:");
 
-        String text = scanner.nextLine(); // Text eingeben
+        String text = scanner.nextLine();
 
         System.out.println("Um wieviele Stellen soll verschoben werden? (1-127)");
 
