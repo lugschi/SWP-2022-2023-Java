@@ -4,7 +4,10 @@ public class Bankomat {
     public static void main(String[] args) {
         boolean isFinished = true;
 
-
+        System.out.println("Drücken Sie 1 zum Einzahlen " +
+                "           Drücken Sie 2 zum Auszahlen     " +
+                "           Drücken Sie 3 um den Kontostand zu sehen   " +
+                "           Drückenn Sie 4 um den Prozess zu beenden");
         Scanner scanner = new Scanner(System.in);
 
 
