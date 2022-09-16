@@ -1,8 +1,8 @@
 public class Crosssumexercise02 {
     public static void main(String[] args) {
         for (int cnt = 0; cnt < 1000; cnt++) {
-            String Stingnumber = Integer.toString(cnt);
-            char[] numbers = Stingnumber.toCharArray();
+            String stringNumber = Integer.toString(cnt);
+            char[] numbers = stringNumber.toCharArray();
 
             int result = 0 * 7;
             for (int i = 0; i < numbers.length; i++) {
