@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Crosssumexercise04 {
@@ -9,21 +8,22 @@ public class Crosssumexercise04 {
 
         System.out.println("Geben Sie eine zweistellige Zahl ein!");
 
-        while (isFinished) {
-            result = scanner.nextInt();
-            scanner.nextInt();
-            isFinished = false;
-
+        while(isFinished) {
+                result = scanner.nextInt();
+                scanner.nextLine();
+                isFinished = false;
         }
 
-        int iterierte = result;
 
+        int quersum = result;
         while(result >9) {
             int crs = result;
             result = 0;
                 while(crs > 0) {
-
+                    result +=crs % 10;
+                    crs /= 10;
                 }
         }
+        System.out.println("Die Quersumme von " + quersum + " ist " + result);
     }
 }
