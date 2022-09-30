@@ -9,8 +9,7 @@ public class Calendar {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gib einen Monat ein:");
         int m = scanner.nextInt();
-        int startDay = 0;
-        String[] weekDays = {"MO", "TU", "WE", "TH", "FR", "SA", "SU"};
+
 
 
         System.out.println("Geben Sie einen Tag an wo der Monat starten soll.");
@@ -97,31 +96,31 @@ public class Calendar {
             else
                 System.out.print(" | ");
 
-            System.out.print(weekDays[i]);
+
             i++;
 
             if (i == 7) System.out.println(" |");
         }
-        i = 0;
+        int d = 0;
 
         System.out.println("");
         System.out.println("Month");
         System.out.println("");
-        System.out.println("MO TU WE TH FR SA SU");
+        System.out.println("| MO | TU | WE | TH | FR | SA | SU | ");
 
-        while (t < max + startDay + 7 - (max + startDay) % 7) {
-            if (t % 7 == 0)
+        while (d < max + t + 7 - (max + t) % 7) {
+            if (d % 7 == 0)
                 System.out.print("| ");
             else
                 System.out.print(" | ");
 
-            if (t < startDay || t > max + startDay - 1) System.out.print("  ");
-            else System.out.print(t - startDay + 1);
+            if (d < t || d > max + t - 1) System.out.print("  ");
+            else System.out.print(d - t + 1);
 
-            if (t - startDay + 1 < 10 && t >= startDay) System.out.print(" ");
-            t++;
+            if (d - t + 1 < 10 && d >= t) System.out.print(" ");
+            d++;
 
-            if (t % 7 == 0) System.out.println(" |");
+            if (d % 7 == 0) System.out.println(" |");
         }
 
 
