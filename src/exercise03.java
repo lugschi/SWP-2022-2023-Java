@@ -7,6 +7,7 @@ public class exercise03 {
         Arrays.parallelSort(numbers, 0, 6);
         for (int i : numbers) {
             System.out.print(i + " ");
+
         }
     }
 }

@@ -1,14 +1,69 @@
 import java.util.*;
-import java.util.Scanner;
+
 
 public class TicTacToe {
-    public static String main(String[] args) {
 
+    static String[] board;
+    static String turn;
 
-        String[] board = new String[0];
-        String turn = null;
+    public static void main(String[] args) {
 
+        Scanner in = new Scanner(System.in);
+        board = new String[9];
+        turn = "X";
+        String winner = null;
 
+        for (int i = 0; i < 9; i++) {
+            board[i] = String.valueOf(i + 1);
+        }
+
+        System.out.println("Welcome to Tic Tac Toe.");
+        printBoard();
+
+        System.out.println("X starts to play:");
+
+        while (winner == null) {
+            int fieldNumber;
+
+            try {
+                fieldNumber = in.nextInt();
+                if (!(fieldNumber > 0 && fieldNumber <= 9)) {
+                    System.out.println("Field already taken; Type in another number:");
+                    continue;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println(
+                        "Field already taken; Type in another number:");
+                continue;
+            }
+
+            if (board[fieldNumber - 1].equals(
+                    String.valueOf(fieldNumber))) {
+                board[fieldNumber - 1] = turn;
+
+                if (turn.equals("X")) {
+                    turn = "O";
+                } else {
+                    turn = "X";
+                }
+
+                printBoard();
+                winner = checkWinner();
+            } else {
+                System.out.println(
+                        "Field already taken; Type in another number:");
+            }
+        }
+
+        if (winner.equalsIgnoreCase("draw")) {
+            System.out.println(
+                    "It's a draw!");
+        } else {
+            System.out.println("Congratulations, " + winner + " is the winner!");
+        }
+    }
+
+    static String checkWinner() {
         for (int a = 0; a < 8; a++) {
             String line = null;
 
@@ -38,7 +93,7 @@ public class TicTacToe {
                     line = board[2] + board[4] + board[6];
                     break;
             }
-
+            //For X winner
             if (line.equals("XXX")) {
                 return "X";
             }
@@ -58,24 +113,30 @@ public class TicTacToe {
             }
         }
 
-        // To enter the X Or O at the exact place on board.
-        System.out.println(
-                turn + "'s turn; enter a slot number to place "
-                        + turn + " in:");
-
-
-
-
-
 
         System.out.println(
-                "X will play first. Enter a slot number to place X in:");
-
-        return turn;
+                turn + "'s turn; Type in a number: "
+                        + turn);
+        return null;
     }
+
+    static void printBoard() {
+        System.out.println("|---|---|---|");
+        System.out.println("| " + board[0] + " | "
+                + board[1] + " | " + board[2]
+                + " |");
+        System.out.println("|-----------|");
+        System.out.println("| " + board[3] + " | "
+                + board[4] + " | " + board[5]
+                + " |");
+        System.out.println("|-----------|");
+        System.out.println("| " + board[6] + " | "
+                + board[7] + " | " + board[8]
+                + " |");
+        System.out.println("|---|---|---|");
+    }
+
 }
-
-
 
 
 
