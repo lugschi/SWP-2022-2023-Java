@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WordGuessGame {
     public static void main(String[] args) {
         char[] guessWords = new char[6];
-        guessWords[0] = 'k';
+        guessWords[0] = 'h';
         guessWords[1] = 'a';
         guessWords[2] = 'c';
         guessWords[3] = 'k';
@@ -17,13 +17,17 @@ public class WordGuessGame {
         System.out.print("*");
         System.out.print(guessWords[5]);
 
-        boolean isFinished = true;
+        Scanner scanner = new Scanner(System.in);
 
-        while (isFinished) {
+        String[] words = {"brick" , "excel" , "outlook"};
+
+        int result = 0;
+
+
 
         }
 
 
 
     }
-}
+
