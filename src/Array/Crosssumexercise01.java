@@ -1,20 +1,21 @@
-public class Crosssumexercise02 {
+package Array;
+
+public class Crosssumexercise01 {
     public static void main(String[] args) {
         for (int cnt = 0; cnt < 1000; cnt++) {
             String stringNumber = Integer.toString(cnt);
             char[] numbers = stringNumber.toCharArray();
 
-            int result = 0 * 7;
+            int result = 0;
             for (int i = 0; i < numbers.length; i++) {
                 result = result + Character.getNumericValue(numbers[i]);
 
             }
-            int rest = result % 7;
-            if (rest == 0) {
+
+            if (result == 15) {
                 System.out.println("Result: " + cnt + " Crosssum: " + result);
             }
 
         }
     }
 }
-

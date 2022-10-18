@@ -1,3 +1,5 @@
+package Array;
+
 public class Crosssumm1 {
 
     public static void main(String[] args) {

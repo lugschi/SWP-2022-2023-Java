@@ -1,9 +1,12 @@
+package Games;
+
 import java.util.Scanner;
 
 public class WordGuessGame {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         String[] guessWords = {"laptop", "computer", "system"};
+        String[] guess = {"laptop"};
 
 
         boolean isFinished = true;
@@ -22,7 +25,8 @@ public class WordGuessGame {
                 guessWord1[4] = '*';
                 guessWord1[5] = 'p';
                 System.out.println(guessWord1);
-                String guess = scanner.next();
+                char[] guess1 = guess[0].toCharArray();
+
                 while (guess.equals("laptop")) {
                     System.out.println("Rate mit Buchstaben was für ein Wort das sein könnte:");
                     if (guess.equals("a")) {

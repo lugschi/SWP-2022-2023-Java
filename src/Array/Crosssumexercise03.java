@@ -1,3 +1,5 @@
+package Array;
+
 public class Crosssumexercise03 {
 
     public static int[] CrossSums = new int[Calculater(false) + 1];

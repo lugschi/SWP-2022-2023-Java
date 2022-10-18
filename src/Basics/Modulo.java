@@ -1,3 +1,5 @@
+package Basics;
+
 public class Modulo {
     public static void main(String[] args) {
         int number = 543368;

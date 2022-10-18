@@ -1,3 +1,5 @@
+package Array;
+
 public class Array {
     public static void main(String[] args) {
         int[][] playGround = new int[3][3];
