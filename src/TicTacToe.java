@@ -93,12 +93,12 @@ public class TicTacToe {
                     line = board[2] + board[4] + board[6];
                     break;
             }
-            //For X winner
+
             if (line.equals("XXX")) {
                 return "X";
             }
 
-            // For O winner
+
             else if (line.equals("OOO")) {
                 return "O";
             }
