@@ -47,7 +47,7 @@ public class Car {
 
     public void honk(int amountOfRepetitions) {
         for (int i = 0; i < amountOfRepetitions; i++) {
-            System.out.print("ich bin ein" + this.brand + " und habe einen Tank");
+            System.out.print("tuuuuuuuuuuut");
         }
     }
 
