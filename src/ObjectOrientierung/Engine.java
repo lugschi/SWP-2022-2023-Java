@@ -16,9 +16,9 @@ public class Engine {
     /*
      * amount should be between 0 and 100
      */
-    public void drive(int amount, int speed) {
+    public void drive(int speed) {
 
-        System.out.println("The motor is running with " + amount + "and with " + speed + "km/h");
+        System.out.println("The speed equals" + speed + "km/h");
     }
 
 
