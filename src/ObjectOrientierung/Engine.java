@@ -17,8 +17,13 @@ public class Engine {
      * amount should be between 0 and 100
      */
     public void drive(int speed) {
+            if (speed >100) {
+                System.out.println("This car can't drive this fast");
+            } else if (speed <1) {
+                System.out.println("This car can't drive this slow");
+            }
 
-        System.out.println("The speed equals" + speed + "km/h");
+        System.out.println("The speed equals " + speed + "km/h");
     }
 
 

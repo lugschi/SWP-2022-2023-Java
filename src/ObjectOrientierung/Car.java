@@ -1,8 +1,11 @@
 package ObjectOrientierung;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Car {
     private Engine engine;
+    private List<RearMirror> mirrors;
     private int fuelConsumption;
     private int fuelAmount;
     private String brand;
@@ -16,10 +19,17 @@ public class Car {
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
+        this.mirrors = new ArrayList<>();
     }
 
 
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
 
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
 
     // Methode
     public void drive() {
