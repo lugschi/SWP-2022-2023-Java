@@ -1,15 +1,19 @@
 package ObjectOrientierung;
 
+import java.util.ArrayList;
+
 public class ObjectO01 {
     public static void main(String[] args) {
         Engine e1 = new Engine(140, Engine.TYPE.DIESEL, 100);
 
-        RearMirror r1 = new RearMirror(100, 0);
-        RearMirror r2 = new RearMirror(90, -40);
+        RearMirror r1 = new RearMirror(100, 40);
+        RearMirror r2 = new RearMirror(100, -40);
 
         System.out.println(e1.getHorsePower() + "hp");
 
         e1.drive(100);
+        System.out.println(r1.getSize());
+        System.out.println(r2.getSize());
 
         Tank t1 = new Tank(70, 69);
 
@@ -17,13 +21,13 @@ public class ObjectO01 {
         System.out.println(t1.getCurrentTank() + "L");
 
 
-        Car c1 = new Car(e1, 6,"BMW", "BMW1234");
+        Car c1 = new Car(e1, r1, 6,"BMW", "BMW4321");
         c1.addMirror(r1);
         c1.addMirror(r2);
 
         System.out.println(c1.getMirrors().get(0).getPosition());
 
-        Car c2 = new Car(e1, 7, "Nissan", "N4321");
+        Car c2 = new Car(e1, r2, 7, "Audi", "Audi4321");
 
         System.out.println(c2.getFuelAmount());
         c2.drive();
@@ -34,8 +38,7 @@ public class ObjectO01 {
         c1.getRemainingRange();
         c1.honk(3);
 
-        Car c3 = new Car(e1, 4, "Opel", "1234O");
-
+        Car c3 = new Car(e1, r1, 5, "Opel", "Opel1234");
 
 
 

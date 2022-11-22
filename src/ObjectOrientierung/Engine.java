@@ -23,7 +23,7 @@ public class Engine {
                 System.out.println("This car can't drive this slow");
             }
 
-        System.out.println("The speed equals " + speed + "km/h");
+        System.out.println("The speed comprise " + speed + "km/h");
     }
 
 

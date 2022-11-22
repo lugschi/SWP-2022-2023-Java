@@ -6,6 +6,7 @@ import java.util.List;
 public class Car {
     private Engine engine;
     private List<RearMirror> mirrors;
+    private RearMirror rearMirror;
     private int fuelConsumption;
     private int fuelAmount;
     private String brand;
@@ -14,12 +15,14 @@ public class Car {
     private int range;
 
 
-    public Car(Engine engine, int fuelConsumption, String brand, String serialNumber) {
+    public Car(Engine engine, RearMirror rearMirror, int fuelConsumption, String brand, String serialNumber) {
         this.engine = engine;
+        this.rearMirror = rearMirror;
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.mirrors = new ArrayList<>();
+
     }
 
 
