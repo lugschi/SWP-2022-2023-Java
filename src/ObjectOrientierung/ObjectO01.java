@@ -9,6 +9,11 @@ public class ObjectO01 {
         RearMirror r1 = new RearMirror(100, 40);
         RearMirror r2 = new RearMirror(100, -40);
 
+        Tire t = new Tire(4, Tire.color.black);
+
+        System.out.println(t.getTireAmount());
+
+
         System.out.println(e1.getHorsePower() + "hp");
 
         e1.drive(100);
@@ -21,13 +26,13 @@ public class ObjectO01 {
         System.out.println(t1.getCurrentTank() + "L");
 
 
-        Car c1 = new Car(e1, r1, 6,"BMW", "BMW4321");
+        Car c1 = new Car(e1, r1, 6,"BMW", "BMW4321", t);
         c1.addMirror(r1);
         c1.addMirror(r2);
 
         System.out.println(c1.getMirrors().get(0).getPosition());
 
-        Car c2 = new Car(e1, r2, 7, "Audi", "Audi4321");
+        Car c2 = new Car(e1, r2, 7, "Audi", "Audi4321", t);
 
         System.out.println(c2.getFuelAmount());
         c2.drive();
@@ -38,7 +43,7 @@ public class ObjectO01 {
         c1.getRemainingRange();
         c1.honk(3);
 
-        Car c3 = new Car(e1, r1, 5, "Opel", "Opel1234");
+        Car c3 = new Car(e1, r1, 5, "Opel", "Opel1234", t);
 
 
 
