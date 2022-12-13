@@ -3,20 +3,20 @@ package ObjectOrientierung;
 public class Tire {
     public enum color{silver, white, black};
 
-    private int tireAmount;
+    private int size;
     private color felloeColor;
 
-    public Tire (int tireAmount, color felloeColor) {
-        this.tireAmount = tireAmount;
+    public Tire (int size, color felloeColor) {
+        this.size = size;
         this.felloeColor = felloeColor;
     }
 
     public int getTireAmount() {
-        return tireAmount;
+        return size;
     }
 
     public void setTireAmount(int tireAmount) {
-        this.tireAmount = tireAmount;
+        this.size = tireAmount;
     }
 
     public color getFelloeColor() {
