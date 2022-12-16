@@ -14,9 +14,8 @@ public class RemoteMain {
         r1.addBattery(b1);
         r1.addBattery(b2);
 
-        r1.turnOn();
         r1.getStatus();
-
+        r1.turnOn();
         r1.turnOff();
 
 

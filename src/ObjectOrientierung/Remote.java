@@ -38,11 +38,14 @@ public class Remote {
     }
 
     public void turnOn() {
-        double value1 = getBatteries().get(0).getBatteryCondition();
-        double value2 = getBatteries().get(1).getBatteryCondition();
-        double result1 = value1 -5;
-        double result2 = value2 -5;
+
+        double batteryChange = getBatteries().get(0).getBatteryCondition() - 5;
+            getBatteries().get(0).setBatteryCondition(batteryChange);
+        double batteryChange2 = getBatteries().get(1).getBatteryCondition() - 5;
+        getBatteries().get(1).setBatteryCondition(batteryChange);
         System.out.println("Verbraucher angeschlossen");
+        System.out.println("Batterie 1: " + batteryChange);
+        System.out.println("Batterie 2: " + batteryChange2);
     }
 
     public void turnOff() {

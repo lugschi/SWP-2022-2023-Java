@@ -1,19 +1,19 @@
 package ObjectOrientierung;
 
 public class Battery {
-    private int batteryCondition;
+    private double batteryCondition;
     private int voltAmount;
 
-    public Battery (int batteryCondition, int voltAmount ) {
+    public Battery (double batteryCondition, int voltAmount ) {
         this.batteryCondition = batteryCondition;
         this.voltAmount = voltAmount;
     }
 
-    public void setBatteryCondition(int batteryCondition) {
+    public void setBatteryCondition(double batteryCondition) {
         this.batteryCondition = batteryCondition;
     }
 
-    public int getBatteryCondition() {
+    public double getBatteryCondition() {
         return batteryCondition;
     }
 
