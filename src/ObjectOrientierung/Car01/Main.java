@@ -1,8 +1,6 @@
-package ObjectOrientierung;
+package ObjectOrientierung.Car01;
 
-import java.util.ArrayList;
-
-public class ObjectO01 {
+public class Main {
     public static void main(String[] args) {
         Engine e1 = new Engine(140, Engine.TYPE.DIESEL, 100);
 

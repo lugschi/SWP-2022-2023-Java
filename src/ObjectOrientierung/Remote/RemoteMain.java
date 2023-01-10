@@ -1,6 +1,4 @@
-package ObjectOrientierung;
-
-import java.util.ArrayList;
+package ObjectOrientierung.Remote;
 
 public class RemoteMain {
     public static void main(String[] args) {

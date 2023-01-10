@@ -1,4 +1,5 @@
-package ObjectOrientierung;
+package ObjectOrientierung.Remote;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ObjectOrientierung;
+package ObjectOrientierung.Remote;
 
 public class Battery {
     private double batteryCondition;

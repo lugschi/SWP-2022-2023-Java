@@ -1,4 +1,4 @@
-package ObjectOrientierung;
+package ObjectOrientierung.Car01;
 
 public class Tank {
     private int tankAmount;
