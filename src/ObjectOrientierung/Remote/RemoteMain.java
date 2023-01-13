@@ -8,6 +8,7 @@ public class RemoteMain {
 
 
 
+
         Remote r1 = new Remote ();
         r1.addBattery(b1);
         r1.addBattery(b2);

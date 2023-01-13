@@ -10,16 +10,20 @@ public class Car {
     private int fuelConsumption;
     private Producer producer;
     private Engine engine;
+    private int kilometreCounter;
 
 
-    public Car(COLOR color, int maxSpeed, int basePrice, int fuelConsumption, Producer producer, Engine engine) {
+    public Car(COLOR color, int maxSpeed, int basePrice, int fuelConsumption, Producer producer, Engine engine, int kilometreCounter) {
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.basePrice = basePrice;
         this.fuelConsumption = fuelConsumption;
         this.producer = producer;
         this.engine = engine;
+        this.kilometreCounter = kilometreCounter;
     }
+
+
 
     public int getMaxSpeed() {
         return maxSpeed;
@@ -61,8 +65,24 @@ public class Car {
         this.engine = engine;
     }
 
+    public int getKilometreCounter() {
+        return kilometreCounter;
+    }
+
+    public void setKilometreCounter(int kilometreCounter) {
+        this.kilometreCounter = kilometreCounter;
+    }
 
 
+    public void discount(){
+        double discountedPrice = basePrice - (producer.getDiscount() * basePrice);
+        System.out.println("this car costs" + discountedPrice + "€");
+    }
 
+    public void consmption () {
+        if (kilometreCounter>= 50000) {
+            this.fuelConsumption = (int) (fuelConsumption*0.098);
+        }
+    }
 
 }

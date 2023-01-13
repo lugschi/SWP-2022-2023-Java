@@ -7,13 +7,10 @@ public class Remote {
     private List<Battery> batteries;
 
 
-
-    public Remote () {
+    public Remote() {
         this.batteries = new ArrayList<>();
 
     }
-
-
 
 
     public void addBattery(Battery batteries) {
@@ -34,14 +31,14 @@ public class Remote {
     public void getStatus() {
         double value1 = getBatteries().get(0).getBatteryCondition();
         double value2 = getBatteries().get(1).getBatteryCondition();
-        double result = (value1 + value2)/2;
+        double result = (value1 + value2) / 2;
         System.out.println(result);
     }
 
     public void turnOn() {
 
         double batteryChange = getBatteries().get(0).getBatteryCondition() - 5;
-            getBatteries().get(0).setBatteryCondition(batteryChange);
+        getBatteries().get(0).setBatteryCondition(batteryChange);
         double batteryChange2 = getBatteries().get(1).getBatteryCondition() - 5;
         getBatteries().get(1).setBatteryCondition(batteryChange);
         System.out.println("Verbraucher angeschlossen");

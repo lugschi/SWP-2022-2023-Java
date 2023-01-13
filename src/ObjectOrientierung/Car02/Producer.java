@@ -13,6 +13,8 @@ public class Producer {
         this.discount = discount;
     }
 
+
+
     public String getName() {
         return name;
     }
