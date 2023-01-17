@@ -76,12 +76,14 @@ public class Car {
 
     public void discount(){
         double discountedPrice = basePrice - (producer.getDiscount() * basePrice);
-        System.out.println("this car costs" + discountedPrice + "€");
+        System.out.println("This car costs discounted " + discountedPrice + "€");
     }
 
-    public void consmption () {
+    public void consmption() {
         if (kilometreCounter>= 50000) {
-            this.fuelConsumption = (int) (fuelConsumption*0.098);
+            System.out.println((this.fuelConsumption*9.8/100)+this.fuelConsumption + "L");
+        } else {
+            System.out.println("The fuel consumption equals " + this.fuelConsumption + "L");
         }
     }
 
