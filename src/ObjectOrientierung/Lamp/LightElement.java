@@ -1,6 +1,6 @@
 package ObjectOrientierung.Lamp;
 
-public class Gluehelemente1 {
+public class LightElement {
     private String name;
     public enum COLOR{RED, GREEN, BLUE};
     private COLOR color;
@@ -8,7 +8,7 @@ public class Gluehelemente1 {
     private boolean status;
 
 
-    public Gluehelemente1(String name, COLOR color, int currentConsumption, boolean status) {
+    public LightElement(String name, COLOR color, int currentConsumption, boolean status) {
         this.name = name;
         this.color = color;
         this.currentConsumption = currentConsumption;
@@ -40,11 +40,13 @@ public class Gluehelemente1 {
         this.currentConsumption = currentConsumption;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public boolean setStatus(boolean status) {
         this.status = status;
+        return status;
     }
+
 }
