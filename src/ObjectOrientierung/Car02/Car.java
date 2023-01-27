@@ -86,5 +86,8 @@ public class Car {
             System.out.println("The fuel consumption equals " + this.fuelConsumption + "L");
         }
     }
+    public void drive() {
+        System.out.println("I am driving!");
+    }
 
 }

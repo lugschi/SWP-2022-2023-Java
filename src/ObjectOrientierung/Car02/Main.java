@@ -14,6 +14,11 @@ public class Main {
 
         c1.discount();
         c1.consmption();
+
+        Truck t1 = new Truck(Car.COLOR.WHITE, 95, 75000, 12, p1, e1, 0, "Super Trailer");
+        t1.drive();
+
+        System.out.println(t1.getTrailer() + t1.getBasePrice());
     }
 
 
