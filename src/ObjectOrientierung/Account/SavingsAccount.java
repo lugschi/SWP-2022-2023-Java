@@ -9,17 +9,19 @@ public class SavingsAccount {
     }
 
     public void withdraw(double withdrawAmount) {
+        double result = balance - withdrawAmount;
         if(withdrawAmount >= balance) {
             System.out.println("This payout is not possible!");
-        } else{
-            System.out.println("You withdrawed: " + withdrawAmount);
-            System.out.println(balance - withdrawAmount);
+        } else {
+            System.out.println("You withdrawed: "+ withdrawAmount);
+            System.out.println("Your new balance is:" + result);
         }
     }
 
     public void deposit(double depositAmount) {
+        double result = balance + depositAmount;
         System.out.println("You deposited: " + depositAmount);
-        System.out.println(balance + depositAmount);
+        System.out.println("Your new balance is: "+ result);
     }
 
     public void accountBalance() {
