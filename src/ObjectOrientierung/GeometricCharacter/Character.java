@@ -16,9 +16,15 @@ public class Character {
         }
 
     public void printNameOfCharacterForm() {
-
+        for (int i = 0; i < characterForm.size(); i++) {
+            System.out.println(characterForm.get(i).getName());
+        }
 
         }
+
+    public void getArea() {
+
     }
+}
 
 
