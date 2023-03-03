@@ -23,8 +23,9 @@ public class Character {
         }
 
     public void getArea() {
-
+        System.out.println();
+        }
     }
-}
+
 
 
