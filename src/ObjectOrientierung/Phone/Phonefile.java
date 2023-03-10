@@ -10,4 +10,11 @@ public class Phonefile {
         this.name = name;
         this.size = size;
     }
+
+    public void getInfo(){
+        System.out.println(size);
+        System.out.println(name);
+        System.out.println(extension);
+
+    }
 }

@@ -12,4 +12,13 @@ public class SIM {
     public String doCall(){
         return "-";
     }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNumber() {
+        return number;
+    }
 }
