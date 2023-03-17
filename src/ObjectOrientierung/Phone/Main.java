@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         SIM sim = new SIM(1, "+43 1234");
-        SDCard card = new SDCard(5000);
+        SDCard card = new SDCard(5000, 10);
         Camera cam = new Camera(Camera.RESOLUTION.HIGH);
 
         Phone phone = new Phone("Red", sim, card, cam);

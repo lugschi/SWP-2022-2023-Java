@@ -9,6 +9,10 @@ public class Camera {
         this.resolution = resolution;
     }
 
+    public void makePicture(){
+
+    }
+
     public RESOLUTION getResolution() {
         return resolution;
     }

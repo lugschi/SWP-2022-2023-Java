@@ -25,7 +25,6 @@ public class Phone {
      return 0;
     }
 
-    public void printAllFiles(){
 
     }
-}
+
