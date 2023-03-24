@@ -3,7 +3,6 @@ package at.grl.games.firstgame;
 import org.newdawn.slick.Graphics;
 
 public class Rectangle {
-    private enum DIRECTION{RIGHT, DOWN, LEFT, UP};
     private float x;
     private float y;
     private float speed;
@@ -20,7 +19,7 @@ public class Rectangle {
 
     public void update(int delta){
         this.x += (float)delta/this.speed;
-        if(this.x >600){
+        if(this.x >800){
             this.x = 0;
         }
 
