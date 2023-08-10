@@ -1,0 +1,17 @@
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Spambot.exe
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Spambot.deps.json
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Spambot.runtimeconfig.json
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Spambot.dll
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Spambot.pdb
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.AssemblyInfoInputs.cache
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.AssemblyInfo.cs
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.csproj.CoreCompileInputs.cache
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.dll
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\refint\Spambot.dll
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.pdb
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.genruntimeconfig.cache
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\ref\Spambot.dll
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.csproj.AssemblyReference.cache
+C:\Users\lgrabher\Desktop\Projects\Spambot\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\lgrabher\Desktop\Projects\Spambot\obj\Debug\net8.0\Spambot.csproj.CopyComplete
